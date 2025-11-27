@@ -15,7 +15,7 @@ struct RatingsView: View {
             Image(systemName: "star")
                 .resizable()
                 .scaledToFit()
-                .foregroundColor(.yellow)
+                .foregroundStyle(.yellow)
                 .symbolVariant(.slash)
                 .opacity(currentRating == 0 ? 0 : 1)
                 .onTapGesture {
@@ -25,7 +25,7 @@ struct RatingsView: View {
                 Image(systemName: "star")
                     .resizable()
                     .scaledToFit()
-                    .foregroundColor(.yellow)
+                    .foregroundStyle(.yellow)
                     .symbolVariant(rating < currentRating ? .fill : .none)
                     .onTapGesture {
                         withAnimation {
